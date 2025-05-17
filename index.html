@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/PranavLogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AiNote Maker</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script src="https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js"></script>
+    <script>
+  window.addEventListener("DOMContentLoaded", function() {
+    window.AgentInitializer.init({
+      rootId: "JotformAgent-0196b2fb533877d2b643d9ac36156544fbcc",
+      formID: "0196b2fb533877d2b643d9ac36156544fbcc",
+      queryParams: ["skipWelcome=1", "maximizable=1"],
+      domain: "https:\/\/www.jotform.com",
+      isInitialOpen: false,
+      isDraggable: false,
+      background: "linear-gradient(180deg, #0F53B4 0%, #0F53B4 100%)",
+      buttonBackgroundColor: "#246506",
+      buttonIconColor: "#FFFFFF",
+      variant: false,
+      customizations: {
+        greeting: "Yes",
+        greetingMessage: "Hi! How can I assist you?",
+        pulse: "Yes",
+        position: "right"
+      }
+    });
+  });
+</script>
+  </body>
+</html>
